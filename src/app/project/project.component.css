@@ -1,0 +1,24 @@
+.project-card {
+  font-family: Calibri, Trebuchet, sans-serif;
+  background: #ED9B40;
+  margin: 10px;
+}
+.like {
+  background-color: #ED9B40;
+  font-family: Calibri;
+  font-weight: bold;
+  color: #ffffff;
+}
+.share {
+  background-color: #ED9B40;
+  font-family: Calibri;
+  font-weight: bold;
+  color: #ffffff;
+}
+.title {
+  font-weight: bold;
+}
+.example-header-image {
+  background-image: url('https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/2050/SITours/paris-in-one-day-sightseeing-tour-in-paris-130592.jpg');
+  background-size: cover;
+}

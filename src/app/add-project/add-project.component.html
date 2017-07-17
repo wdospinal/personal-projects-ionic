@@ -1,0 +1,20 @@
+<h3>Add a project:</h3>
+<form class="userForm">
+  <md-input-container class="name">
+    <input mdInput placeholder="name" [(ngModel)]="project.name" name="name" type="text" required>
+  </md-input-container>
+
+  <md-input-container class="url">
+    <input mdInput placeholder="url" [(ngModel)]="project.url" name="url" type="text" required>
+  </md-input-container>
+
+  <br>
+
+  <div class="userActionButtonGroup">
+    <div md-dialog-actions>
+      <button (click)="addElement()" md-button>Add</button>
+      <button md-button md-dialog-close>Cancel</button>
+    </div>
+  </div>
+
+</form>
