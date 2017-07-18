@@ -15,10 +15,18 @@
   font-weight: bold;
   color: #ffffff;
 }
-.title {
+.title-obj {
   font-weight: bold;
+  right: 50%;
+  align-content: center;
+  margin: 0 auto; 
+  display:block; 
+  text-align: center;
 }
 .example-header-image {
   background-image: url('https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/2050/SITours/paris-in-one-day-sightseeing-tour-in-paris-130592.jpg');
   background-size: cover;
+}
+.content {
+  word-wrap: break-word!important;
 }

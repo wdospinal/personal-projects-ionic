@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+import { Project } from '../../model/project';
 import { ProjectComponent } from '../project/project.component';
 
 @Component({
@@ -17,5 +18,13 @@ export class HomePage {
         limitToLast: 50
       }
     });
+  }
+  changeLike(event) {
+    const likes = event.likes + 1;
+    this.items.update(event.$key, { likes: likes });
+  }
+
+  updateList(project: Project) {
+    this.items.push(project);
   }
 }

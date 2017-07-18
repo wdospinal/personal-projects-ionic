@@ -1,15 +1,13 @@
-<ion-content padding>
-  <ion-card class="project-card">
+<ion-card class="project-card">
+    <ion-card-title class="title-obj">{{project.name}} ({{project.likes}})</ion-card-title>
     <ion-card-header>
       {{project.url}}
     </ion-card-header>
-    <ion-card-title class="title">{{project.name}} ({{project.likes}})</ion-card-title>
     <ion-card-content>
-      <p>
+      <p class="content">
         {{project.content}}
       </p>
     </ion-card-content>
     <button ion-item class="like" (click)="doLike()">LIKE</button>
     <button ion-item class="share">SHARE</button>
-  </ion-card>
-</ion-content>
+</ion-card>
