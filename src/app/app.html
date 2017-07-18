@@ -1,6 +1,1 @@
 <ion-nav [root]="rootPage"></ion-nav>
-<ion-list>
-  <ion-item *ngFor="let item of items | async">
-    <app-project [project]='item' (change)="changeLike($event)"></app-project>
-  </ion-item>
-</ion-list>

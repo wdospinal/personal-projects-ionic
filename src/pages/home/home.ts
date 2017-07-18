@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +10,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
+  items: FirebaseListObservable<any[]>;
+  constructor(public navCtrl: NavController, public db: AngularFireDatabase) {
+    this.items = db.list('/messages', {
+      query: {
+        limitToLast: 50
+      }
+    });
   }
-
 }

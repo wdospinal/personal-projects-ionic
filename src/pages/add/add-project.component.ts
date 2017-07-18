@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Project } from '../model/project';
+import { Project } from '../../model/project';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
