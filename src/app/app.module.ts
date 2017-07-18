@@ -10,6 +10,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ProjectComponent } from '../pages/project/project.component';
+import { AddProjectComponent } from '../pages/add/add-project.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyCT_JcNuLP0N947hKlbI56lVznRKggxxkI',
@@ -24,7 +25,8 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
     ProjectComponent,
-    HomePage
+    HomePage,
+    AddProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     ProjectComponent,
-    HomePage
+    HomePage,
+    AddProjectComponent
   ],
   providers: [
     StatusBar,

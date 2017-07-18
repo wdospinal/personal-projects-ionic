@@ -1,12 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank title
+      Personal Projects Ionic
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
   <ion-list *ngFor="let item of items | async">
-    <ion-item><app-project [project]='item' (change)="changeLike($event)"></app-project></ion-item>    
-  </ion-list>  
+    <ion-item>
+      <app-project [project]='item' (change)="changeLike($event)"></app-project>
+    </ion-item>
+  </ion-list>
+  <button ion-button round outline (click)="openModal()" [color]="myColor">
+  Add project
+  </button>
 </ion-content>

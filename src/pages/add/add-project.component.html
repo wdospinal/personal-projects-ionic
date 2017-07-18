@@ -1,20 +1,21 @@
-<h3>Add a project:</h3>
-<form class="userForm">
-  <md-input-container class="name">
-    <input mdInput placeholder="name" [(ngModel)]="project.name" name="name" type="text" required>
-  </md-input-container>
+<ion-list class="userForm">
+  <ion-item class="name">
+    <ion-label color="primary" floating>Name</ion-label>
+    <ion-input [(ngModel)]="project.name" name="name" type="text"></ion-input>
+  </ion-item>
 
-  <md-input-container class="url">
-    <input mdInput placeholder="url" [(ngModel)]="project.url" name="url" type="text" required>
-  </md-input-container>
+  <ion-item class="url">
+    <ion-label color="primary" floating>url</ion-label>
+    <ion-input [(ngModel)]="project.url" name="url" type="text"></ion-input>
+  </ion-item>
 
   <br>
 
   <div class="userActionButtonGroup">
     <div md-dialog-actions>
-      <button (click)="addElement()" md-button>Add</button>
-      <button md-button md-dialog-close>Cancel</button>
+      <button ion-button round outline (click)="dismiss()" md-button>Add</button>
+      <button ion-button round outline>Cancel</button>
     </div>
   </div>
 
-</form>
+</ion-list>

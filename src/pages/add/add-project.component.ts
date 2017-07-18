@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { Project } from '../../model/project';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { ViewController } from 'ionic-angular';
 
 @Component({
   selector: 'app-add-project',
-  templateUrl: './add-project.component.html',
-  styleUrls: ['./add-project.component.css']
+  templateUrl: './add-project.component.html'
 })
 export class AddProjectComponent {
 
@@ -17,10 +16,10 @@ export class AddProjectComponent {
     there’s nothing happening on Jupiter or Neptune, but from way out in space you can see these lights, the cafés,
     people drinking and singing. For all we know, Paris is the hottest spot in the universe.`};
 
-  constructor() {
+  constructor(public viewCtrl: ViewController) {
 
   }
-  addElement() {
-    this.project
-  }
+  dismiss() {
+   this.viewCtrl.dismiss(this.project);
+ }
 }
